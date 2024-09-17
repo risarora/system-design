@@ -24,7 +24,29 @@ System Design Introduction Basics
       - Available
 
 5.  Relational Databases.mp4
-6.  Databse Isolation Levels.mp4
+    Key properties of Relational Databases are
+
+    1.  Data consistenty
+    2.  Data durabiilty
+    3.  Data integrity
+    4.  Constraints
+    5.  Everthing in one Place
+
+    - ACID
+    - ![ACID Properties](images/ACID_Properties.png)
+
+      - Atomicity - All statements within a transaction take effect or none.
+      - Consistency - Data will never go incorrect
+      - Isolation -
+      - ![isolation](./images/isolation.png)
+
+6.  Database Isolation Levels.mp4 [Isolation Levels](Isolation%20levels.md)
+
+    1.  **Read Uncommitted** - The lowest isolation level where transactions can see uncommitted changes made by other transactions.
+    2.  **Read Committed** - A transaction can only see changes committed by other transactions. Uncommitted data is not visible.
+    3.  **Repeatable Read** - Ensures that if a transaction reads a value, no other transaction can modify or delete that value until the current transaction is complete.
+    4.  **Serializable** - The highest isolation level, which ensures complete isolation. Transactions are executed in such a way that they appear to be serially executed, one after another.
+
 7.  Scaling Databases.mp4
 8.  Sharding and Partitioning.mp4
 9.  Non-Relational Databases.mp4
