@@ -48,6 +48,16 @@ System Design Introduction Basics
     4.  **Serializable** - The highest isolation level, which ensures complete isolation. Transactions are executed in such a way that they appear to be serially executed, one after another.
 
 7.  Scaling Databases.mp4
+    - Horizontal Scalability
+    - Vertical Scalability
+
+- ![ReplicationSyncAsync](./images/ReplicationSyncAsync.png)
+
+  - **Horizontal Scaling** : Sharding
+    ![Sharding](./images/Sharding1.png)
+    ![Sharding](./images/Sharding2.png)
+    TODO: Implement Relication and Sharding on postgress
+
 8.  Sharding and Partitioning.mp4
 9.  Non-Relational Databases.mp4
 10. Picking the right database.mp4

@@ -77,8 +77,8 @@ These isolation levels help maintain the balance between **data integrity** and 
 
 ### Start Transaction
 
-![alt text](image-1.png)
-9:24
+![alt text](./images/image-1.png)
+TODO: 9:24
 
 # ChatGPT
 
@@ -155,6 +155,10 @@ In **Serializable isolation level**, all the above issues are prevented because:
 - T1 and T2 cannot interfere with each other in ways that cause dirty, non-repeatable, or phantom reads.
 - T2 will block and wait for T1 to complete its changes (or vice versa), ensuring the transactions behave as though they were executed serially.
 
+  ![Serializable Isolation](./images/SerializableIsolation.png)
+
 ---
 
 This example should clarify the difference between dirty reads, non-repeatable reads, and phantom reads under various isolation levels.
+
+[start_transaction_in_both_the_sessions](./images/start_transaction_in_both_the_sessions.png)
