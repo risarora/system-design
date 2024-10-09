@@ -98,8 +98,8 @@
 
 9.  Non-Relational Databases.mp4
 
-        1.  https://drive.google.com/file/d/1NTHxb11DDAz8TweZNpki-nv786RVE8NC/view
-            TODO : Use cases for Document DB
+    https://drive.google.com/file/d/1NTHxb11DDAz8TweZNpki-nv786RVE8NC/view
+    TODO : Use cases for Document DB
 
     ### Document DB
 
@@ -117,6 +117,14 @@
     [NoSQL_DBs.md](NoSQL_DBs)
 
 10. Picking the right database.mp4
+    - https://drive.google.com/file/d/1e29ezXnZFvrNfUd2MaX7id1DwR1rKXdu/view
+    - TODO :Attach Screen shots
+    - A new database is created to solve any one problem really well.
+    - Why Non Relational DataBases Scale
+    - Does this mean No dataBase is different
+    - How does this help in designing systems
+    - How to pick the right DB.
+    -
 11. What is caching.mp4
 12. Populating and scaling a cache.mp4
 13. Caching at different levels.mp4
@@ -144,9 +152,7 @@
 35. Designing a Recommendation Engine.mp4
 36. Designing a Web Crawler.mp4
     Notes.txt
-
-37. https://drive.google.com/file/d/1e29ezXnZFvrNfUd2MaX7id1DwR1rKXdu/view
-
+37. ssss
 38. https://drive.google.com/file/d/1OKeAs4tA44toEiJ1dfrtY5fmJHPsDBg3/view
 
 39. https://drive.google.com/file/d/15YNYOGqI4GxXqAeonVWQ6sQlkks8aM7g/view
