@@ -97,7 +97,25 @@
         - ![alt text](./images/ShardOrNot.png)
 
 9.  Non-Relational Databases.mp4
-    1.  https://drive.google.com/file/d/1NTHxb11DDAz8TweZNpki-nv786RVE8NC/view
+
+        1.  https://drive.google.com/file/d/1NTHxb11DDAz8TweZNpki-nv786RVE8NC/view
+            TODO : Use cases for Document DB
+
+    ### Document DB
+
+    ![Document DB](./images/Document_DB.png)
+
+    ### Key Value Pair DB
+
+    ![Key Value Pair DB](./images/Key_Value_Pair_DB.png)
+
+    ### Graph DBs
+
+    ![Graph_DBs](./images/Graph_DBs.png)
+    TODO Exercise : Setup No SQL DataBases on your machines and Play around with them
+
+    [NoSQL_DBs.md](NoSQL_DBs)
+
 10. Picking the right database.mp4
 11. What is caching.mp4
 12. Populating and scaling a cache.mp4
