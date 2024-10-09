@@ -9,25 +9,30 @@ System Design Introduction Basics
 
     - Understand the problem statement
     - Break down into componenets
+      ![Break System into components](./images/03_01_Break_System_into_components.png)
     - Dissect each component
+      ![Dissect each component](./images/03_2_Dissect_each_component.png)
+      ![alt text](./images/completed_component.png)
 
 4.  How do you evaluate that you have built a good system.mp4
 
     - Every system is <mark>infinitely</mark> buildable hence knowing when to stop evolution is important.
     - 1. Break System into components
-    - 2. Every system has clear responsibilitities (exclusive)
+    - 2. Every system has clear responsibilitities (exclusive scope)
+         ![alt text](./images/04_01_Every_system_has_clear_responsibilitities.png)
     - 3. For each component slight details are figured out.
-    - ![03_subcomponents](./images/03_subcomponents.png)
+         ![03_subcomponents](./images/03_subcomponents.png)
     - 4. Each component ( in isolation ) is :
       - Scalable
       - Fault tolerant
       - Available
+        ![Each component in isolation](./images/Each_component_in_isolation.png)
 
 5.  Relational Databases.mp4
     Key properties of Relational Databases are
 
     1.  Data consistenty
-    2.  Data durabiilty
+    2.  Data durability
     3.  Data integrity
     4.  Constraints
     5.  Everthing in one Place

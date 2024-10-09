@@ -88,6 +88,8 @@ Sure! Here's a simple illustration with **two sessions (transactions)** to show 
 
 ### **Scenario Setup**
 
+https://chatgpt.com/c/66e9f757-2f48-800a-91a4-0035ba8f85ff
+
 We have a table `accounts` with a single row:
 
 ```sql
