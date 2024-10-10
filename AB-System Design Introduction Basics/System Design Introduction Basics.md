@@ -124,13 +124,45 @@
     - Does this mean No dataBase is different
     - How does this help in designing systems
     - How to pick the right DB.
-    -
+
+# Caching
+
 11. What is caching.mp4
+    https://drive.google.com/file/d/1OKeAs4tA44toEiJ1dfrtY5fmJHPsDBg3/view
+
+    Cache is a place
+
+    - Cache helps to save disk io, network io or CPU io.
+      ![CacheIO](./images/CacheIO.png)
+    - Caches how are they used
+      ![Cache 2](./images/cache2.png)
+      - Popular Caches used in the industry
+        - **Memcached**
+        - **Redis**
+    - Caches are not restricted to RAM based storage
+    - storage that is 'nearer'
+    - In simplest forms
+
+      - Caches are just glorified **hash tables**.
+
+    - Examples of best use case for caches
+    - ![examples of caching ](./images/examples_of_caching.png)
+    - TODO : Exercise
+      - Setup Redis locally
+      - put and get some data
+      - measure time diff
+      - compare time diff with a DataBase
+
 12. Populating and scaling a cache.mp4
 13. Caching at different levels.mp4
+
+# Pub Sub
+
 14. Message Brokers and Queues.mp4
 15. Message Stream and Kafka Essentials.mp4
 16. Realtime Pubsub.mp4
+
+# 
 17. Load Balancers.mp4
 18. Circuit Balancers.mp4
 19. Data Redundancy \_ Recovery.mp4
