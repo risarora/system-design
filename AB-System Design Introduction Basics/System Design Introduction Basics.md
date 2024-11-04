@@ -146,6 +146,10 @@
       - Caches are just glorified **hash tables**.
 
     - Examples of best use case for caches
+      - A user tweets a tweet. Now the tweet is cached for other users to read rather than
+      - Google News
+      - Access Token
+      - Live Streaming
     - ![examples of caching ](./images/examples_of_caching.png)
     - TODO : Exercise
       - Setup Redis locally
@@ -154,7 +158,28 @@
       - compare time diff with a DataBase
 
 12. Populating and scaling a cache.mp4
+
+- https://drive.google.com/file/d/15YNYOGqI4GxXqAeonVWQ6sQlkks8aM7g/view
+- ![12_01_PopulationOfCache.png](./images/12_01_PopulationOfCache.png)
+  1.  Population
+      1.  Lazy Population
+          - ![12_01_LazyCaching.png](./images/12_01_LazyCaching.png)
+      2.  Eager Population
+          - Write to bothe Database and cache at the same time
+            ![12_01_EagerCaching1.png](./images/12_01_EagerCaching1.png)
+          - Proactively push data to Cache
+            ![12_01_EagerCaching1.png](./images/12_01_EagerCaching2.png)
+  2.  Scaling a Cache
+      - Cache is a database hence scaling techniqueues for a cache like Redis are similar to that of a database.
+      1. Vertical Scaling
+         ![12_02_Vertical_Scaling-Cache.png](./images/12_02_Vertical_Scaling-Cache.png)
+      2. Horizontal Scaling
+         ![12_03_Horizontal_Scaling-Replica-Cache.png](./images/12_03_Horizontal_Scaling-Replica-Cache.png)
+         ![12_03_Horizontal_Scaling-Sharding-Cache.png](./images/12_03_Horizontal_Scaling-Sharding-Cache.png)
+
 13. Caching at different levels.mp4
+
+- https://drive.google.com/file/d/1nsDQUdMHyZCb94_ja5GwNjLDqGNGOkdK/view
 
 # Pub Sub
 
@@ -162,7 +187,8 @@
 15. Message Stream and Kafka Essentials.mp4
 16. Realtime Pubsub.mp4
 
-# 
+#
+
 17. Load Balancers.mp4
 18. Circuit Balancers.mp4
 19. Data Redundancy \_ Recovery.mp4
@@ -185,11 +211,11 @@
 36. Designing a Web Crawler.mp4
     Notes.txt
 37. ssss
-38. https://drive.google.com/file/d/1OKeAs4tA44toEiJ1dfrtY5fmJHPsDBg3/view
+38. Caching 1
 
-39. https://drive.google.com/file/d/15YNYOGqI4GxXqAeonVWQ6sQlkks8aM7g/view
+39. Population Caching
 
-40. https://drive.google.com/file/d/1nsDQUdMHyZCb94_ja5GwNjLDqGNGOkdK/view
+40. Caching at different levels.mp4
 
 41. https://drive.google.com/file/d/1FoolFZv0zt2q0yY3t8S1vz-Ki3ehOgDK/view
 
