@@ -181,11 +181,81 @@
 
 - https://drive.google.com/file/d/1nsDQUdMHyZCb94_ja5GwNjLDqGNGOkdK/view
 
+- **CDN**
+  TODO Exercise
+  - Create an account at Akomoi/CloudFlare
+  - Configure a simple CDN and understand how it is used.
+  - Cache a simple image in CDN and access it from CDN using CDN URL
+
 # Pub Sub
 
 14. Message Brokers and Queues.mp4
+
+- https://drive.google.com/file/d/1FoolFZv0zt2q0yY3t8S1vz-Ki3ehOgDK/view
+- There are two types communications Synchronous and Asynchronous
+- Synchronous
+  - Logging in
+- Asynchronous
+
+  - Long Running Tasks
+  - Trigger Dependent Tasks Across Machines
+    - Eg :-
+    - Spinning up VM - In the above case the system gives a status update to client
+    - Video Encoding Decoding
+      ![14_Video-Processor.png](./images/14_Video-Processor.png)
+
+- **Message Queues** are called Message Brokers.
+- **Message Brokers**
+  a. Help connect different sub-systems
+  b. Can connect Different Sub Systems
+  c. Can Retain Message for <mark>n</mark> days
+  d. Can Re-queue the messages if not deleted. This is to ensure task is completed.
+
+- Typical FLow using a message Queue
+- TODO:Exercise
+  - Setup Rabbit MQ Locally
+  - Write code to push and pull messages
+  - Go through documentation
+
 15. Message Stream and Kafka Essentials.mp4
+
+- Differ a little from Message Queues
+- Kafka Essentials
+
+  - Kafka Message stays in the stream till it 'expires'.
+  - Kafka has topics
+  - Every Topic has 'n' Partitions
+  - Message is sent to a topic
+  - Messages are asigned to paritioned based on Hash Value
+  - Within PAritions Messages are paritioned
+  - Limitations :
+    - Parallesim is limited by no. of partitions
+      - One Paritions can be consumed by One comsumer only
+      - hence
+      - Max no. of Consumers that can consume is equal to number of Partitions
+
+- TODO: Exercise
+  - Setup Kafka Locally
+  - Create code to push and read messages from Kafka
+  - Fiddle with no. of Partitions, no. of Counsumers etc.
+  -
+
 16. Realtime Pubsub.mp4
+
+- Here the message is <mark>pushed</mark> to all consumers rather than a normal message queue where consumers have to pull the message
+- Limitation is no Buffer
+- Eg. Configuration Push to API's Servers
+- TODO: Exercise
+  - Setup Redis locally
+  - go through Documentation
+  - test realTime Broadcast
+  - test if Message persists (check if new suscriber gets old messages)
+  - Connect to redis via 5 terminals
+    - 1 publisher
+    - 4 subscribers
+    - push message via publisher and test message received via a subscribers
+    - push 10 messages
+    - add a new suscriber and see if it is able to receive older messages
 
 #
 
@@ -217,11 +287,11 @@
 
 40. Caching at different levels.mp4
 
-41. https://drive.google.com/file/d/1FoolFZv0zt2q0yY3t8S1vz-Ki3ehOgDK/view
+41. Message Brokers and Queues https://drive.google.com/file/d/1FoolFZv0zt2q0yY3t8S1vz-Ki3ehOgDK/view
 
-42. https://drive.google.com/file/d/1mwactTgMv8mMUGonrrM41mzIvfKsHq02/view
+42. Message Stream and Kafka Essentials https://drive.google.com/file/d/1mwactTgMv8mMUGonrrM41mzIvfKsHq02/view
 
-43. https://drive.google.com/file/d/1Bc2tfrpyXA124_jixRngoYULtUZ085s9/view
+43. Realtime Pubsub.mp4 https://drive.google.com/file/d/1Bc2tfrpyXA124_jixRngoYULtUZ085s9/view
 
 44. https://drive.google.com/file/d/1QpP07BS0B538TP_EV2BH7qJv6ZftWG9q/view
 
