@@ -257,12 +257,72 @@
     - push 10 messages
     - add a new suscriber and see if it is able to receive older messages
 
+17. Load Balancers.mp4
+
+- Provide abstraction layer for the client
+- Abstracts out complexity from teh end user.
+- Load Balancer Algorithms
+  - Round Robin
+    - Uniform Infrastructure
+  - Weighted Round Robin
+    - Non Uniform Infrastructure
+  - Least Connections
+    - Assign connection to server with least load.
+    - Good for services which have **very high response time variance**.
+  - Hash based routing
+    - Near random, hence distribution would be uniform across the server.
+    - It would **Sticky** wrt parameter selected for hashing.
+- **Scaling :** Allows servers to scale up and scale down as per need.
+- **Availability :** Automatically can remove non fuctioning Node
+- TODO :
+  - Go through AWS load balancer documentation.
+  - Play around with a load balancer
+  - Look at LB configurations
+
+18. Circuit Breakers
+
+- Prevent Cascading Failures
+- We make a call to service only if a service is available.
+- It is not a database that we can spin up. It has to implemented based on the product.
+- How is it implemented ?
+- Service makes a call to Circuit Breaker service before actually contacting the service.
+- TODO :
+  - Implement a simple Circuit Breaker Database.
+  - Say we have profile service and post service.
+  - Then we can update the status in CB DB and then make decision.
+  - What happens when CB server goes sub down.
+  - We cache the status.
+  - Here we can use redis pub sub to update the config.
+
+19. Data Redundancy Recovery
+
+- APIs servers are stateless
+- Databases are stateful
+- TODO : Complete Notes
+
+- TODO:Exercise
+  - Setup replica of MYSQL DataBase (mine)
+  - Setup replication b/w two MYSQL DataBase
+  - See how u can backup a mysql databse
+  - See how u can restore a mysql databse
+
+20. Leader Election for auto-recovery
+
+- Doing automatic recovery with leader election
+- If a server goes down then the **orchestrator** spins new machine behind the load balancer.
+- TODO : Exercise
+  - Implement Leader Election with threads rather than machines
+  -
+  - https://www.meta.ai/c/81e8c827-3d28-44bf-b768-d64db17966cf
+  - https://www.geeksforgeeks.org/leader-election-in-system-design/
+  - Algorithms for Loader Election
+    - Bully Algorithm
+    - Ring Algorithm
+    - Paxos
+    - Raft
+
 #
 
-17. Load Balancers.mp4
-18. Circuit Balancers.mp4
-19. Data Redundancy \_ Recovery.mp4
-20. Leader Election for auto-recovery.mp4
 21. Client server model \_ Communication protocols.mp4
 22. Blob Storage \_ S3.mp4
 23. Bloom Filters.mp4
@@ -293,13 +353,13 @@
 
 43. Realtime Pubsub.mp4 https://drive.google.com/file/d/1Bc2tfrpyXA124_jixRngoYULtUZ085s9/view
 
-44. https://drive.google.com/file/d/1QpP07BS0B538TP_EV2BH7qJv6ZftWG9q/view
+44. Load Balancer https://drive.google.com/file/d/1QpP07BS0B538TP_EV2BH7qJv6ZftWG9q/view
 
-45. https://drive.google.com/file/d/1goC1zw2eVN3CLfl006srSQi9VSIbwp2L/view
+45. Circuit Breakers https://drive.google.com/file/d/1goC1zw2eVN3CLfl006srSQi9VSIbwp2L/view
 
-46. https://drive.google.com/file/d/1Z6sEvhWJXJSgyHBaww0xIRtAhZGTczS_/view
+46. Data Redundancy Recovery https://drive.google.com/file/d/1Z6sEvhWJXJSgyHBaww0xIRtAhZGTczS_/view
 
-47. https://drive.google.com/file/d/1PvGqj4BMB8TyE-rGh17RHCJe8qqpucoB/view
+47. Leader Election for auto-recovery.mp4 https://drive.google.com/file/d/1PvGqj4BMB8TyE-rGh17RHCJe8qqpucoB/view
 
 48. https://drive.google.com/file/d/1EnJSlNneQWpFTfdFXSvoSYAcXgakXJJg/view
 
