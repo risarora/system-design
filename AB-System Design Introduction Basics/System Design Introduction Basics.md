@@ -321,16 +321,114 @@
     - Paxos
     - Raft
 
+21. Client server model Communication protocols.mp4
+
+- Two machines can talk as below
+  - Client Demands
+  - Server Acts
+  - Connection happens across the network
+    - **TCP**
+      - 3 way handhake for setup
+      - 2 way handhake for teardown
+      - Connection doen not break automatically as this protocol does not terminate connection automatically.
+      - It is just a connection protocol
+      - Cannot dictate what data can be sent over the network.
+      - Communication happens over the common network
+      - **HTTP** : Has mutiple Specification
+        - 1.1 is heavily used in production
+        - Most commonly used one to date
+        - Client and Server and connection is terminated after sending the message to client
+          - unless <mark>Connection : keep-alive </mark>header is supported
+          -
+    - **UDP**
+    - **WebSocket**
+      - Bi-Directional Connection.
+      - Shot polling to the server every few seconds (units of time ) and message is rendered
+      - Realtime, Low latency
+      - Usecases -
+        - Realtime Chat,
+        - 'Like Hearts' in Insta chat apps.
+        - Realtime stock market ticks
+- TODO : Exercise
+  - Write simple http web server.
+    - Use Flask/Djago to expose simple rest api
+    - Write simple TODO App - DB - Simple UI
+  - **Sockets :** Build Chat application using SocketIO
+
+22. Blob Storage - S3
+
+- https://drive.google.com/file/d/1v6k7x5ebXbsZvPXO5AWIM3jrLxg1Zw3e/view
+
+- **Binary Large Object**
+- Worlds most popular storage
+- Bucket is the location
+- 'path' is the key of the file
+- Four features of S3
+  - Infinitly scalable network attached storage
+  - Create, Replace, Delete Files
+  - Read entire files or segments of File
+  - Advantages :
+    - Cheap, Scalable,
+  - Disadvantages :
+    - Reads are slower than SSD
+    - Not a full fleged file system.
+    - Need AWS SDK to talk to S3
+- ## TODO : Exercise
+  - Go through s3 Documentation
+  - Explore their APIs
+    - Read, Write and Replace Files
+    - Read fragment of files
+    - Uploading huge files( muti-part upload and failure handling)
+  - Read about ACLs on S3
+    - how to make files private to other s3 users
+    - how to limit files to be accessed by
+
+23. Bloom Filters.mp4
+
+- Probabilistic Structure
+- It is a bit based filter.
+- Example -
+
+  - Say i want to recommend videos a user has not watched.
+  - Obvious Answer : Create a set of user watched list.
+  - But with millions of users this will be a big problem
+
+- ![23_01_BloomFilter.png](./images/23_01_BloomFilter.png)
+- As more and more keys are added more and more, 1's increase
+- and False positive rate increases.
+- So we have to tune the size of the bloom filter as per over needs.
+- We cannot extend a bloom filter easiely
+
+  - Create a new Bloom Filter with larger size
+  - Ingest all the data again into the bigger bloom filter.
+
+- Redis supports a bloom filter
+- To enlarge a bloom filter we need to reingest the data
+- **Practical Applications :**
+
+  - user should be okay with some false positive
+  - Recomendation engines
+  - Web crawlers
+  - Feed generation
+  - Tinder Feed
+
+- TODO - Exercise
+
+  - Setup Redis Locally
+  - Read Redis documentaion on Bloom Filter
+  - Write small code to play around with it
+  - Try to get one Flase Positive result
+
+24. Consistent Hashing.mp4
+
+    - https://drive.google.com/file/d/1msL9o1-a3ARfiPzY1u38LVbXWR7ptb35/view
+
 #
 
-21. Client server model \_ Communication protocols.mp4
-22. Blob Storage \_ S3.mp4
-23. Bloom Filters.mp4
-24. Consistent Hashing.mp4
 25. Introduction to Big Data Tools.mp4
 26. Design Ecommerce Product Listing.mp4
 27. Designing API Rate Limiter.mp4
-28. Designing \_ Scaling Notifications.mp4
+28. Designing Scaling Notifications.mp4
 29. Designing Realtime Abuse Master.mp4
 30. Designing Tinder Feed.mp4
 31. Desigining Twitter Trends.mp4
