@@ -423,9 +423,29 @@
 
     - https://drive.google.com/file/d/1msL9o1-a3ARfiPzY1u38LVbXWR7ptb35/view
 
+- Output of the same key from a hash function is always the same.
+- Select a server to connect from load balancer
+- It is stateless
+  - hashing used for determinng a server to connection.
+- Answers problem of who owns what ?
+  - Does not do data movement
+  -
+- ## Distributes Storage - Statefull
+
+- Exercise : TODO
+
+  - implement it in your favourite programing language
+  - user 2 arrays and one binary search
+
 #
 
 25. Introduction to Big Data Tools.mp4
+
+- https://drive.google.com/file/d/1QcUq_BatU6MjJwsGw5ZelLm_Gkczi4U6/view
+- Exercise : TODO
+  Spark
+  Spark Streaming
+
 26. Design Ecommerce Product Listing.mp4
 27. Designing API Rate Limiter.mp4
 28. Designing Scaling Notifications.mp4
@@ -437,56 +457,3 @@
 34. Designing a Fraud Detection system.mp4
 35. Designing a Recommendation Engine.mp4
 36. Designing a Web Crawler.mp4
-    Notes.txt
-37. ssss
-38. Caching 1
-
-39. Population Caching
-
-40. Caching at different levels.mp4
-
-41. Message Brokers and Queues https://drive.google.com/file/d/1FoolFZv0zt2q0yY3t8S1vz-Ki3ehOgDK/view
-
-42. Message Stream and Kafka Essentials https://drive.google.com/file/d/1mwactTgMv8mMUGonrrM41mzIvfKsHq02/view
-
-43. Realtime Pubsub.mp4 https://drive.google.com/file/d/1Bc2tfrpyXA124_jixRngoYULtUZ085s9/view
-
-44. Load Balancer https://drive.google.com/file/d/1QpP07BS0B538TP_EV2BH7qJv6ZftWG9q/view
-
-45. Circuit Breakers https://drive.google.com/file/d/1goC1zw2eVN3CLfl006srSQi9VSIbwp2L/view
-
-46. Data Redundancy Recovery https://drive.google.com/file/d/1Z6sEvhWJXJSgyHBaww0xIRtAhZGTczS_/view
-
-47. Leader Election for auto-recovery.mp4 https://drive.google.com/file/d/1PvGqj4BMB8TyE-rGh17RHCJe8qqpucoB/view
-
-48. https://drive.google.com/file/d/1EnJSlNneQWpFTfdFXSvoSYAcXgakXJJg/view
-
-49. https://drive.google.com/file/d/1v6k7x5ebXbsZvPXO5AWIM3jrLxg1Zw3e/view
-
-50. https://drive.google.com/file/d/1pD5a-q4bTq6ST1sxqiAqLUqbJdCVqHbU/view
-
-51. https://drive.google.com/file/d/1msL9o1-a3ARfiPzY1u38LVbXWR7ptb35/view
-
-52. https://drive.google.com/file/d/1QcUq_BatU6MjJwsGw5ZelLm_Gkczi4U6/view
-
-53. https://drive.google.com/file/d/1wwXoHpI_IYHoVpqQSm8eT2vleZ1-mhaG/view
-
-54. https://drive.google.com/file/d/1smRs4eAYFicvSUaTH1Rg3SrDNCsOEecn/view
-
-55. https://drive.google.com/file/d/1r23gZWNyg85h6GULibmwTWx6UkisOQW0/view
-
-56. https://drive.google.com/file/d/1j8qUbpegfue229w3d8n7JYTufwVKW5cH/view
-
-57. https://drive.google.com/file/d/12tYoAqWFACK1m4_D0_OEnss8ZQbUVq6B/view
-
-58. https://drive.google.com/file/d/12McUAXH9yu1ygJt7HQyj3tOhUnT0_-yg/view
-
-59. https://drive.google.com/file/d/1sb1QGbcklqtCm0UiWdu12hYjjrtBg0jW/view
-
-60. https://drive.google.com/file/d/1tbG4OHi-kPos05NklfXzou-tUd-sat9-/view
-
-61. https://drive.google.com/file/d/1BhlH8O7E_2ZtxlA_BuP1gIZvrBHczngK/view
-
-62. https://drive.google.com/file/d/1E2PZoA5R64npMztxKRuLGzqYk9Ovl53d/view
-
-63. https://drive.google.com/file/d/1iynQJ_1ZYMYS-V3mThtMPFsqarhVI08m/view
