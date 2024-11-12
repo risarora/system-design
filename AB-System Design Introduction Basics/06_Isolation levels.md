@@ -65,11 +65,12 @@ These isolation levels help maintain the balance between **data integrity** and 
 
 ## Start a transaction in both the sessions
 
+TODO : FIX image
 ![Start a transaction in both the sessions](image.png)
 
 - A record is updated **Session 1** but not comitted
-
-![alt text](image.png)
+  TODO : FIX image
+  ![alt text](image.png)
 
 # Set Isolation Level
 
@@ -163,4 +164,7 @@ In **Serializable isolation level**, all the above issues are prevented because:
 
 This example should clarify the difference between dirty reads, non-repeatable reads, and phantom reads under various isolation levels.
 
-[start_transaction_in_both_the_sessions](./images/start_transaction_in_both_the_sessions.png)
+![start_transaction_in_both_the_sessions](./images/start_transaction_in_both_the_sessions.png)
+
+TODO: Find home for
+![](./images/06_isolation_levels_xx.png)

@@ -47,7 +47,8 @@
       - Isolation -
       - ![isolation](./images/isolation.png)
 
-6.  Database Isolation Levels.mp4 [Isolation Levels](Isolation%20levels.md)
+6.  Database Isolation Levels.mp4
+    [Isolation Levels](06_Isolation%20levels.md)
 
     1.  **Read Uncommitted** - The lowest isolation level where transactions can see uncommitted changes made by other transactions.
     2.  **Read Committed** - A transaction can only see changes committed by other transactions. Uncommitted data is not visible.
@@ -114,7 +115,7 @@
     ![Graph_DBs](./images/Graph_DBs.png)
     TODO Exercise : Setup No SQL DataBases on your machines and Play around with them
 
-    [NoSQL_DBs.md](NoSQL_DBs)
+    [09_NoSQL_DBs.md](NoSQL_DBs)
 
 10. Picking the right database.mp4
     - https://drive.google.com/file/d/1e29ezXnZFvrNfUd2MaX7id1DwR1rKXdu/view
