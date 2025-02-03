@@ -461,7 +461,7 @@
 
 #
 
-28. Designing a Notifications Service .mp4
+28. Designing a Notifications Service.mp4
 
 - Sends a 'message' in bulk to multiple clients
 - Should be scalable
@@ -469,6 +469,13 @@
 -
 
 29. Designing Realtime Abuse Master.mp4
+
+    - Abuse dictionaly is a text file and stored in a location say S3
+    - Approach 1 :
+      - Store abuses in a set - Ineficient approach
+    - Approach 2 :
+      - Use `Trie` String matching
+
 30. Designing Tinder Feed.mp4
 31. Desigining Twitter Trends.mp4
 32. Designing URL Shortner.mp4
