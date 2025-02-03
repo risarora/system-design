@@ -7,20 +7,6 @@ Source : https://www.youtube.com/watch?v=Qhc8gFF2qS8&t=19s
 - 00:45 Resources & References
 - 01:26 Key Concepts
 - 01:36 Key Concept: RUM Conjecture
-
-- RUM conjecture ("Database Internals" by Alex Petrov)
-
-  - **Read**
-  - **Update**
-  - **Memory Overhead**
-  - https://blog.asquareb.com/blog/2016/05/10/the-rum-conjecture/
-  - -![RUM Triangle](rum-space.png)
-  - Data access methods need to modified or newly invented to adapt with ever changing workload requirements and hardware changes. This paper looks at the challenges in designing new access methods which increasingly needs to be application and hardware aware. The fundamental challenges faced are to minimize a) Read time - R b) Update cost - U c) memory over head - M and the conjecture made is that when optimizing the read-update-memory (RUM) overheads, optimizing in any two negatively impacts the third. Deciding which overheads to optimize for and to what extend has always been and remains the prominent part of designing access methods.
-
-  - CAP theorem for Indexes
-  - Ref : https://www.youtube.com/watch?v=ZxvulmKXIto
-  - https://www.codementor.io/@arpitbhayani/the-rum-conjecture-16z2ckqte9
-
 - 03:08 Key Concept: DB = WAL + Materialized View
 - 03:50 No Index
 - 06:45 Primary Keys
@@ -42,7 +28,21 @@ Source : https://www.youtube.com/watch?v=Qhc8gFF2qS8&t=19s
 
 CONCEPTS
 
-- RUM conjecture
+- ## RUM conjecture
+
+  - RUM conjecture ("Database Internals" by Alex Petrov)
+
+    - **Read**
+    - **Update**
+    - **Memory Overhead**
+    - https://blog.asquareb.com/blog/2016/05/10/the-rum-conjecture/
+    - -![RUM Triangle](rum-space.png)
+    - Data access methods need to modified or newly invented to adapt with ever changing workload requirements and hardware changes. This paper looks at the challenges in designing new access methods which increasingly needs to be application and hardware aware. The fundamental challenges faced are to minimize a) Read time - R b) Update cost - U c) memory over head - M and the conjecture made is that when optimizing the read-update-memory (RUM) overheads, optimizing in any two negatively impacts the third. Deciding which overheads to optimize for and to what extend has always been and remains the prominent part of designing access methods.
+
+    - CAP theorem for Indexes
+    - Ref : https://www.youtube.com/watch?v=ZxvulmKXIto
+    - https://www.codementor.io/@arpitbhayani/the-rum-conjecture-16z2ckqte9
+
 - DB = WAL + materialized view
 
 TYPES of INDICES:
