@@ -448,8 +448,26 @@
   Spark Streaming
 
 26. Design Ecommerce Product Listing.mp4
+
 27. Designing API Rate Limiter.mp4
-28. Designing Scaling Notifications.mp4
+
+- Rate limter is used to protect a system be keeping a track a count of requests
+- Use the correct exception code of 429
+  - HTTP 429 Too Many Requests client error response status code
+- Fixed window algorithm
+- DB is updated for each request coming to the system
+- Key value pair with expiration
+- with Redis
+
+#
+
+28. Designing a Notifications Service .mp4
+
+- Sends a 'message' in bulk to multiple clients
+- Should be scalable
+- Support a 'fan out' architecture
+-
+
 29. Designing Realtime Abuse Master.mp4
 30. Designing Tinder Feed.mp4
 31. Desigining Twitter Trends.mp4
