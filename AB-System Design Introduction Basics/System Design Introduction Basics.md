@@ -470,11 +470,14 @@
 
 29. Designing Realtime Abuse Master.mp4
 
-    - Abuse dictionaly is a text file and stored in a location say S3
-    - Approach 1 :
-      - Store abuses in a set - Ineficient approach
-    - Approach 2 :
-      - Use `Trie` String matching
+- Abuse dictionaly is a text file and stored in a location say S3
+- Approach 1 :
+  - Store abuses in a set - Ineficient approach
+- Approach 2 :
+
+  - Use `Trie` String matching
+
+- TODO: Build Live Stream on Web Sockets, Web RTC and RTMP
 
 30. Designing Tinder Feed.mp4
 31. Desigining Twitter Trends.mp4
