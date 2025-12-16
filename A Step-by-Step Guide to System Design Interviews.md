@@ -413,26 +413,6 @@ decisions, and communicate your thought process clearly.
 These 7 steps should guide you to remain on track and cover all the
 different aspects when answering a system design interview problem.
 
-Thank you so much for reading.
-
-If you found it valuable, hit the clap button 👏 and consider following
-me for more such content.
-
-If you have any questions or suggestions, leave a comment.
-
-Join my [**Free Newsletter**](https://blog.algomaster.io/) for weekly
-articles on coding, dsa, system design and interviews.
-
-Checkout my **Youtube channel** for more in-depth content.
-
-Checkout my [**GitHub repositories**](https://github.com/ashishps1) for
-free interview preparation resources.
-
-I hope you have a lovely day!
-
-See you soon,
-
-Ashish
-
-_Originally published
-at [https://blog.algomaster.io](https://blog.algomaster.io/p/how-to-answer-a-system-design-interview-problem)._
+- **Youtube channel** @algomaster
+- **GitHub repositories** https://github.com/ashishps1 for
+- Originally published [https://blog.algomaster.io](https://blog.algomaster.io/p/how-to-answer-a-system-design-interview-problem).\_
